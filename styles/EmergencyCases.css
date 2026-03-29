@@ -1,0 +1,62 @@
+.emergency-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bar h2 {
+  font-weight: 600;
+  margin: 0;
+  color: #444;
+}
+
+.orphan-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+.orphan-card:hover {
+  transform: translateY(-6px);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.no-cases {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+  padding: 2rem;
+}
+
+button.btn-danger {
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+button.btn-danger:hover {
+  background-color: #c0392b;
+}

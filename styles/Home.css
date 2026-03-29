@@ -1,0 +1,146 @@
+/* Slide from left */
+@keyframes slideFromLeft {
+    0% {
+      transform: translateX(-80%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide from right */
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(80%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Section container */
+  .orphan-support-section {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Center the content and limit width */
+  .orphan-support-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px;
+  }
+  
+  /* Green text */
+  .green-text {
+    
+    font-size: 20px;
+  }
+  
+  /* Base animation properties */
+  .fade-in {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s; /* Slow and smooth */
+  }
+  
+  /* Delays for staggered effect */
+  .fade-in.delay-1 {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+    animation-name: slideFromLeft;
+    animation-delay: 0.5s;
+  }
+  
+  .fade-in.delay-2 {
+    animation-name: slideFromRight;
+    animation-delay: 1.5s;
+  }
+  
+  .fade-in.delay-3 {
+    animation-name: slideFromLeft;
+    animation-delay: 2.5s;
+  }
+  
+  
+  /* Ensure opacity is set to 1 after animation starts */
+  .fade-in.animated {
+    opacity: 1;
+  }
+  
+  
+  .home-cards-container {
+    padding: 40px 20px;
+    margin: 0 auto; /* Center the container */
+    padding-bottom: 300px;
+    
+  }
+  
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between rows */
+   
+  }
+  
+  .custom-card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 400px; /* Fixed width for uniform size */
+    height: 100vw; /* Fixed height for uniform size */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 400px; /* Ensure the image fits proportionally */
+    object-fit: cover; /* Crop the image nicely */
+  }
+  
+  .custom-card h5 {
+    font-weight: bold;
+  }
+  
+  .custom-card h6 {
+    font-style: italic;
+    color: #6c757d; /* Muted subtitle color */
+  }
+  
+  .custom-card p {
+    color: #333;
+    font-size: 0.9rem; /* Slightly smaller font for text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .custom-card {
+      width: 100%; /* Make it full-width on smaller screens */
+      height: auto; /* Adjust height for smaller screens */
+    }
+  
+    .card-image {
+      height: 200px; /* Adjust image height for better fit */
+    }
+  }
+  
+  .holo-icon {
+    font-size: 50px; /* Icon size */
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+  }
+
+.sponsorship-btn:hover{
+  background-color: #4f7557 !important;
+}
+  

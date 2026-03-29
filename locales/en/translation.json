@@ -1,0 +1,98 @@
+{
+  "landing": {
+    "welcomeText": "Welcome to OCO"
+  },
+  "register": {
+    "Redirecting you to login page...": "Redirecting you to login page...",
+    "User registered successfully!": "User registered successfully!",
+    "This email is already registered.": "This email is already registered.",
+    "This email already exists. Please use a different one.": "This email already exists. Please use a different one.",
+    "Registration failed due to server error.": "Registration failed due to server error.",
+    "Something went wrong. Please try again later.": "Something went wrong. Please try again later.",
+    "Become a Sponsor": "Become a Sponsor",
+    "Enter your full name...": "Enter your full name...",
+    "Enter your email...": "Enter your email...",
+    "Enter your password...": "Enter your password...",
+    "Confirm your new password": "Confirm your new password",
+    "Date of Birth": "Date of Birth",
+    "Civil ID": "Civil ID",
+    "Phone Number": "Phone Number",
+    "Date Issued": "Date Issued",
+    "Select Social Status": "Select Social Status",
+    "Single": "Single",
+    "Married": "Married",
+    "Divorced": "Divorced",
+    "Widowed": "Widowed",
+    "Address": "Address",
+    "Select Governorate": "Select Governorate",
+    "Muscat": "Muscat",
+    "Al Batinah North": "Al Batinah North",
+    "Al Batinah South": "Al Batinah South",
+    "Al Dakhiliyah": "Al Dakhiliyah",
+    "Al Dhahirah": "Al Dhahirah",
+    "Al Sharqiyah North": "Al Sharqiyah North",
+    "Al Sharqiyah South": "Al Sharqiyah South",
+    "Dhofar": "Dhofar",
+    "Al Wusta": "Al Wusta",
+    "Musandam": "Musandam",
+    "Al Buraimi": "Al Buraimi",
+    "Employment Status": "Employment Status",
+    "Employed": "Employed",
+    "Not Employed": "Not Employed",
+    "Monthly Income": "Monthly Income",
+    "Already Have an Account?": "Already Have an Account?",
+    "REGISTER": "REGISTER",
+    "Sign In": "Sign In"
+  },
+  "login": {
+    "sponsorshipProgram": "OCO Sponsorship Program",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember Me",
+    "forgotPassword": "Forgot Password?",
+    "signIn": "SIGN IN",
+    "noAccount": "No Account?",
+    "signUpNow": "Sign Up Now"
+  },
+  "header": {
+    "home": "Home",
+    "sponsorship": "Sponsorship",
+    "donation": "Donation",
+    "admin": "Admin",
+    "help": "Help",
+    "settings": "Settings",
+    "logout": "Logout",
+    "emergency": "Emergency Cases"
+  },
+  "home": {
+    "supportTitle": "Support Orphans in Oman",
+    "supportParagraph1": "Every child deserves a brighter future, and at OCO, we are committed to helping orphaned children in Oman reach their full potential. Our Orphan Support Program provides financial aid, education, healthcare, and emotional support to ensure that these children thrive in a safe and loving environment.",
+    "supportParagraph2": "Join us in making a difference. Your support helps provide the essentials for a better tomorrow — from school supplies to health care, we aim to create opportunities for these children to grow, learn, and succeed.",
+    "supportParagraph3": "Together, we can give them the chance they deserve. Let's change lives, one child at a time.",
+    "Go to Sponsorship": "Sponsor Now",
+    "Our Areas of Impact": "Our Areas of Impact"
+
+  },
+  "cards": {
+    "Education": "Education",
+    "Empowering through knowledge": "Empowering through knowledge",
+    "Supporting education for a brighter future.": "Supporting education for a brighter future.",
+    "Emergency": "Emergency",
+    "Immediate response and care": "Immediate response and care",
+    "Providing aid during critical moments.": "Providing aid during critical moments.",
+    "Health": "Health",
+    "Promoting well-being": "Promoting well-being",
+    "Enhancing health and wellness.": "Enhancing health and wellness."
+  },
+  "footer": {
+    "aboutUs": "About Us",
+    "aboutText": "We are a non-profit organization based in Oman, dedicated to transforming the lives of orphans through education, healthcare, and community support. Your sponsorship makes a lasting impact.",
+    "contactUs": "Contact Us",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About",
+    "sponsorChild": "Sponsor a Child",
+    "contact": "Contact",
+    "rightsReserved": "© {{year}} Oman Orphans Foundation. All rights reserved."
+  }
+}

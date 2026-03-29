@@ -1,0 +1,34 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4fff4;
+    text-align: center;
+    animation: fadeOut 1s ease-in-out 2s forwards; /* starts after 2s */
+  }
+  
+  .landing-logo {
+    max-width: 150px;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .landing-text {
+    font-size: 2.5rem;
+    color: #2e7d32;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Fade In */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Fade Out */
+  @keyframes fadeOut {
+    to { opacity: 0; transform: translateY(-20px); }
+  }
+  

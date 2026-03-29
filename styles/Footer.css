@@ -1,0 +1,34 @@
+/* .footer-text{
+  color: #000000 !important;
+}
+.footer {
+    background-color: #b4b8b4; 
+    color: #000000 !important; 
+  }
+
+  .me-2{
+    color: #000000 !important;
+  } */
+
+  /* Make all links and icons inherit the footer color */
+  .footer a,
+  .footer a.footer-link,
+  .footer .social-icons a {
+    /* color: black !important; */
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.3s ease;
+  }
+  
+  .footer a:hover,
+  .footer a.footer-link:hover,
+  .footer .social-icons a:hover {
+    /* color: #ffffff !important; */
+    text-decoration: underline;
+    transform: scale(1.05);
+  }
+  
+  .footer .social-icons a {
+    margin-right: 12px;
+    font-size: 1.2rem;
+  }
+  

@@ -1,0 +1,71 @@
+
+
+
+.help-container {
+    padding: 2rem;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feedback-form {
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rating-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .star {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .star.active {
+    color: #ffc107;
+  }
+  
+  .message-box {
+    border-radius: 8px;
+  }
+  
+  .submit-btn {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+    background-color: #29560b !important;
+  }
+  
+  .submit-btn:hover {
+    background: #7ab752 !important;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

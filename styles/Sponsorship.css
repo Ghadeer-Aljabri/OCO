@@ -1,0 +1,203 @@
+/* ===== Orphan Card Redesign ===== */
+.orphan-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+}
+/* Section header with horizontal lines */
+.section-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.section-title-custom {
+  position: relative;
+  font-size: 2rem;
+  color: #198754; /* Bootstrap green or customize */
+  font-weight: 700;
+  padding:  2rem;
+  display: inline-block;
+  z-index: 1;
+}
+
+.section-header-wrapper::before,
+.section-header-wrapper::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #198754;
+  max-width: 500px;
+  position: relative;
+  top: 50%;
+  z-index: 0;
+  margin: 0 1rem;
+}
+
+.orphan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Avatar image section */
+.avatar-wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto; /* centers the whole avatar in the card */
+  border-radius: 8px; /* optional for slightly rounded corners */
+  background-color: #f0f0f0; /* fallback background if image doesn't load */
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+/* Card body text */
+.orphan-card .card-body {
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+
+.orphan-card .card-body .fw-bold {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.orphan-card .card-body .text-muted {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.orphan-image {
+  filter: grayscale(100%) blur(2px);
+  object-fit: cover;
+  border-radius: 10px;
+  height: 250px;
+  width: 100%;
+}
+
+
+
+/* Footer section */
+.orphan-card .card-footer {
+  background-color: #f8f9fa;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6c757d;
+  padding: 0.6rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.orphan-card .sponsor-btn {
+  background-color:  rgb(4, 41, 13) !important ;
+  color: #ffffff !important;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s !important;
+  border-radius: 0 !important; /* Sharper edges */
+  width: 100%;
+}
+
+
+.orphan-card .sponsor-btn:hover {
+  background-color: transparent !important; /* Keep transparent background */
+  border-color: transparent !important; /* Remove green border on hover */
+  color: #198754 !important; /* Darker green text on hover */
+}
+
+.orphan-card .sponsor-btn:focus {
+  box-shadow: none !important;
+}
+.orphan-card .sponsor-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.orphan-card .sponsor-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(40, 167, 69, 0.15) !important;
+  z-index: -1;
+  transition: width 0.4s ease-in-out;
+}
+
+.orphan-card .sponsor-btn:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+
+
+  /* View button */
+  .card .btn-success {
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .card .btn-success:hover {
+    background-color: #1d3021;
+    transform: scale(1.03);
+  }
+  
+  /* Pagination buttons */
+  button.btn-sm {
+    min-width: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    background-color: #0e2e15 !important;
+    color: rgb(0, 0, 0) ;
+  }
+  
+  button.btn-sm:hover {
+    background-color: #596c5d !important;
+    color: rgb(0, 0, 0) ;
+    transform: scale(1.05);
+  }
+  
+  .go-back-home {
+    color: #198754; /* Bootstrap's text-success */
+    font-weight: bold ;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease !important;
+  }
+  
+  .go-back-home:hover {
+    color: #145c32 !important; /* darker green on hover */
+    text-decoration: underline !important;
+    cursor: pointer !important;
+  }
+  .custom-dropdown-menu {
+    position: absolute; /* Ensure it is positioned absolutely */
+    top: 100%; /* Position below the toggle button */
+    left: 0;
+    background-color: #172c1c !important; /* Optional, for styling */
+    color: rgb(0, 0, 0) !important; /* Optional, for styling */
+    z-index: 1000; /* Ensures it's above other content */
+  }
+  
+  .custom-dropdown-item:hover {
+    background-color: #000000 !important; /* Darker green on hover */
+  }
+  
+  .custom-dropdown-container {
+    position: relative; /* Makes dropdown positioning relative to this parent */
+  }
+  

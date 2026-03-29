@@ -1,0 +1,99 @@
+/* Account Container Styles */
+.account-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Account Card Styles */
+.account-card {
+  background-color: #ffffff; /* White background */
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+  border: 2px solid #2e7d32; /* Green border for the card */
+}
+
+/* Account Header */
+.account-header h3,
+.password-section h5 {
+  color: #2e7d32; /* Dark green for header text */
+}
+
+/* Info Section */
+.info-section,
+.password-section {
+  background-color: #e8f5e9; /* Light green background for sections */
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #2e7d32; /* Green border around sections */
+}
+
+/* Info Items */
+.info-item {
+  margin-bottom: 1rem;
+}
+
+/* Info Content */
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #f1f8e9; /* Very light green for info content */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Label and Text */
+label,
+span,
+p {
+  color: #2e7d32; /* Green color for text */
+  margin-bottom: 0.25rem;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: #ffffff; /* White background for inputs */
+  border: 1px solid #2e7d32; /* Green border for inputs */
+}
+
+/* Buttons */
+button,
+.btn {
+  color: #ffffff !important;
+  border-radius: 0.375rem;
+}
+
+.btn-success {
+  border-color: #2e7d32 !important;
+}
+
+.btn-danger {
+  background-color: #d32f2f !important; /* Red background for danger buttons */
+  border-color: #d32f2f !important;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.375rem;
+}
+
+button:hover {
+  background-color: #1b5e20; /* Darker green on hover */
+  transition: background-color 0.3s ease;
+}
+

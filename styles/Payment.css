@@ -1,0 +1,73 @@
+.text-success {
+    color: #198754 !important; /* Bootstrap success color, or customize */
+  }
+  
+  
+
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgb(0, 0, 0) !important;
+
+  }
+
+
+  .go-back-link {
+    color: #198754; /* Bootstrap's text-success */
+    font-weight: bold ;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease !important;
+  }
+  
+  .go-back-link:hover {
+    color: #145c32 !important; /* darker green on hover */
+    text-decoration: underline !important;
+    cursor: pointer !important;
+  }
+  
+  .custom-success-button {
+    background-color:  rgb(4, 41, 13) !important ;
+    color: #ffffff !important;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s !important;
+    border-radius: 0 !important; /* Sharper edges */
+  }
+  
+  
+  .custom-success-button:hover {
+    background-color: transparent !important; /* Keep transparent background */
+    border-color: transparent !important; /* Remove green border on hover */
+    color: #198754 !important; /* Darker green text on hover */
+  }
+  
+  .custom-success-button:focus {
+    box-shadow: none !important;
+  }
+  .custom-success-button {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .custom-success-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(40, 167, 69, 0.15) !important;
+    z-index: -1;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .custom-success-button:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  
+  
+  .divider {
+    border: none;
+    border-top: 2px solid #032310; /* Very dark green */
+    margin: 2rem 0;
+  }
+  

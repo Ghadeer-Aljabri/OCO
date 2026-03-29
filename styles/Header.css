@@ -1,0 +1,205 @@
+.custom-navbar {
+  background-color: #fff;
+  padding: 8px 16px;
+  height: 150px;
+  
+  position: static !important; /* 🛠 force it to scroll */
+  top: auto;
+}
+
+.icon-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0); }
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out infinite;
+}
+
+/* Center navbar items */
+.navbar-center {
+  display: flex;
+  gap: 12px;
+}
+
+/* Logo styling */
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+}
+
+/* Borderless Buttons */
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: #000000 !important;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 0px; /* Hard corners (no rounded edges) */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #42925a;
+  transition: right 0.3s ease-out;
+  z-index: -1; /* Place background behind text */
+}
+
+.nav-button:hover::before {
+  right: 0;
+}
+
+/* Hover effect */
+.nav-button:hover {
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Dropdown menu */
+.custom-dropdown {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logout button */
+.logout-button {
+  background-color: transparent;
+  color: #dc3545;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 0px; /* Hard corners (no rounded edges) */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #dc3545;
+  transition: right 0.3s ease-out;
+  z-index: -1; /* Place background behind text */
+}
+
+.logout-button:hover::before {
+  right: 0;
+}
+
+/* Gear icon */
+.gear-icon {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.gear-icon:hover {
+  color: #000000;
+  transform: rotate(30deg);
+}
+
+/* Logo Effects */
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 8px rgba(70, 162, 70, 0.5));
+}
+
+/* Icon Buttons (Settings and Logout) */
+.icon-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #000000 !important;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+  color: #082c0b !important;
+}
+
+.icon-button:hover svg {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+}
+
+.logout-icon {
+  position: relative;
+}
+
+.logout-icon::after {
+  content: "Logout";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1e361f;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.logout-icon:hover::after {
+  opacity: 1;
+}
